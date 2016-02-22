@@ -1,57 +1,60 @@
 body {
-	font-family:helvetica, arial, sans-serif;
-	font-size:10pt;
-	background-color:#c0c0c0;}
+	font-family:Georgia, serif;
+	font-size:12pt;
+	background-color:#cfcf01;
+	text-align:center;}
 
 a {
-	color:#6c9dfe;
-	font-weight:bold;
-	text-decoration:none;}
+	color:#0dcfcf;
+	font-weight:bolder;
+	text-decoration:overline;}
 
 a:hover {
 	color:#e0e0e0;
-	text-decoration:underline;}
+	text-decoration:line-through;}
 
 table {
-	border:0px;
+	border:10px solid;
 	border-spacing:5px;
 	border-collapse: separate;
 	}
 
 th {
-	padding:5px;
-	border:0px;}
+	padding:0px;
+	border:10px;}
 
 td {
-	padding:5px;
-	border:0px;
-	background-color:#000000;
-	color:#ffffff;}
+	padding:1px;
+	border:10px solid;
+	background-color:#ffffff;
+	color:#9900cf;}
 
 h1, h2, h3 {
-	font-size:18pt;
+	font-size:48pt;
 	color:#ffffff;
-	margin-bottom:10px;}
+	margin-bottom:0px;}
 
 ul {
-	list-style-type:square;}
+	list-style-type:circle;
+	text-align:right;}
 
 ol {
-	list-style-type:katakana-iroha;}
+	list-style-type:hebrew;
+	text-align:right;}
 
 li {
-	padding-bottom:5px;}
+	padding-bottom:25px;}
 
 hr {
-	border:0 none;
-	height:2px;
-	background-color:#ffffff;
-	margin-bottom:10px;}
+	border:2px solid;
+	height:10px;
+	background-color:#e0e0f0;
+	margin-bottom:25px;}
 
 img:hover {
 	-webkit-filter:invert(100%);
 	filter:invert(100%);}
 
-img[src$=".gif"] {
-	-webkit-filter:invert(100%);
-	filter:invert(100%);}
+img {
+	-webkit-filter:hue-rotate(90deg);
+	filter:hue-rotate(90deg);}
