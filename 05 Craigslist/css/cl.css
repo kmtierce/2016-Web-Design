@@ -451,10 +451,10 @@ font-size:1em}
 cursor:pointer;border-bottom:1px dotted #999;zoom:1}
 
 .posting #map{
-height:260px;width:100%;position:relative}
+height:260px;width:100%;position:relative;-webkit-border-radius:0.3em;-moz-border-radius:0.3em;border-radius:0.3em;overflow:hidden;}
 
 .posting.w1024 #map{
-height:300px}
+height:300px;}
 
 #map .closeFS{
 display:none}
@@ -598,7 +598,7 @@ text-align:right;margin-top:5px}
 margin-left:0.3em}
 
 .posting .attrgroup span{
-background-color:#fafafa;border:1px solid #ccc;-webkit-border-radius:.25em;-moz-border-radius:.25em;border-radius:.25em;padding:.15em .4em;white-space:nowrap;line-height:1.85em;font-size:.9em}
+background-color:#fff;color:#CE534D;border:1px solid #CE534D;-webkit-border-radius:0.3em;-moz-border-radius:0.3em;border-radius:0.3em;padding:.15em .4em;white-space:nowrap;line-height:1.85em;font-size:.9em}
 
 .posting .bigattr{
 background-color:#fafafa;border:1px solid #ccc;-webkit-border-radius:.25em;-moz-border-radius:.25em;border-radius:.25em;padding:.15em .4em;font-size:.9em;margin-left:0.3em}
