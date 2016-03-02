@@ -1,5 +1,5 @@
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
-margin:0;padding:0;border:0;font-size:100%;font-family:Helvetica,Arial,sans-serif;vertical-align:baseline}
+margin:0;padding:0;border:0;font-size:100%;font-family:Helvetica,Arial,sans-serif;vertical-align:baseline;color:#46433A;}
 
 ul{
 list-style:none}
@@ -148,14 +148,16 @@ max-width:980px}
 .mobile #pagecontainer>header .contents{
 max-width:10000px !important}
 
+/*EDIT*/
+
 footer{
 position:absolute;bottom:0;left:0;right:0;border-top:1px #ccc solid;text-align:center}
 
 footer .clfooter li{
-display:inline;padding:0 5px;font-size:small}
+display:inline;padding:0 5px;font-size:small;font-family:'nexa_lightregular', Helvetica, Arial, sans-serif;}
 
 footer .clfooter .mobile,.mobile footer .clfooter .desktop{
-display:none}
+display:none;}
 
 .mobile footer .clfooter .mobile{
 display:inline}
@@ -748,8 +750,10 @@ float:left;height:55px;}
 .mobile #pagecontainer header .breadcrumbs{
 position:absolute;bottom:5px;}
 
+/*EDIT*/
+
 #pagecontainer header .userlinks{
-float:right;text-transform:capitalize;margin-top:25px;}
+float:right;text-transform:capitalize;margin-top:23px;}
 
 #pagecontainer header .user{
 float:right;margin-left:5px}
@@ -769,7 +773,7 @@ visibility:visible}
 /*EDIT*/
 
 #pagecontainer header .crumb{
-float:left;margin-right:5px;margin-top:25px;text-transform:capitalize;font-weight:bold;color:#fff;}
+float:left;margin-right:5px;margin-top:23px;text-transform:capitalize;font-weight:bold;color:#fff;}
 
 .mobile #pagecontainer header .crumb{
 display:block;float:none;overflow:hidden;text-overflow:ellipsis;max-width:100%;padding-left:8px;margin:0}
@@ -1005,7 +1009,7 @@ clear:both}
 clear:both}
 
 .toc .row .gc{
-padding:2px;background:#eee;font-size:smaller;text-transform:capitalize;}
+padding:2px;background:#eee;font-size:smaller;text-transform:;-webkit-border-radius: .30em;-moz-border-radius: .30em;border-radius: .30em;}
 
 .toc .row .gc:hover{
 background:#f7f7f7}
@@ -1031,10 +1035,13 @@ display:none}
 /*EDIT*/
 
 .toc .row span.p{
-    background-image:url(../img/photo.png);background-repeat:no-repeat;height:16px;width:32px;font-size:0px;float:right;margin-right:10px;}
+font-size:0px;float:right;}
+
+.toc .row span.p .haspic{
+background-image:url(../img/photo.png);background-repeat:no-repeat;height:16px;width:16px;font-size:0px;float:right;margin-left:24px;}
 
 .toc .row span.p .maptag{
-background-image:url(../img/map.png);display:block;background-repeat:no-repeat;height:16px;width:16px;position:absolute;font-size:0px;margin-left:24px;margin-right:100px;}
+background-image:url(../img/map.png);display:block;background-repeat:no-repeat;height:16px;width:16px;font-size:0px;}
 
 .toc .row .star{
 float:left;margin-right:5px}
@@ -1134,7 +1141,7 @@ display:inline}
 /*EDIT*/
 
 .toc #mapcontainer .date:after,.toc .l2 .price{
-font-size:.8em;font-weight:bold;color:#fff;background-color:#000;border:0px solid #000;-webkit-border-radius:.30em;-moz-border-radius:.30em;border-radius:.30em;padding:1px 3px;float:right;margin-right:50px;margin-left:-100px;}
+font-size:.8em;font-weight:bold;color:#fff;background-color:#000;border:0px solid #000;-webkit-border-radius:.30em;-moz-border-radius:.30em;border-radius:.30em;padding:1px 3px;float:right;margin-left:8px;}
 
 .toc #floater{
 position:absolute;overflow:hidden;z-index:999;display:none;border:2px solid #ccc;background:white}
@@ -2858,7 +2865,16 @@ a:hover{
 text-decoration:none;color:#e0e0e0;}
 
 #subAbb{
-text-transform:capitalize;color:#fff;background-color:#64B6B1;font-weight:bold;border-color:#fff;-webkit-border-radius: .30em;-moz-border-radius: .30em;border-radius: .30em;}
+text-transform:capitalize;color:#fff;background-color:#64B6B1;font-weight:bold;border-color:#fff;-webkit-border-radius: .30em;-moz-border-radius: .30em;border-radius: .30em;font-family:'nexa_boldregular', Helvetica, Arial, sans-serif;}
+
+.breadcrumbs a{
+font-family:'nexa_boldregular', Helvetica, Arial, sans-serif;}
+
+.crumb {
+font-family:'nexa_boldregular', Helvetica, Arial, sans-serif;}
+
+.footlogo {
+font-family:'nexa_boldregular', Helvetica, Arial, sans-serif;text-transform:capitalize;}
 
 
 /* {
