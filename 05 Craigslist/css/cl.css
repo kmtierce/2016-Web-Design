@@ -2890,6 +2890,12 @@ font-family:'nexa_boldregular', Helvetica, Arial, sans-serif;}
 .footlogo {
 font-family:'nexa_boldregular', Helvetica, Arial, sans-serif;text-transform:capitalize;}
 
+.fa {
+margin-top:2px;}
+
+.fa:hover {
+color:#e0e0e0;}
+
 
 /* {
 "sources":{
