@@ -7,6 +7,16 @@
 
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
+@font-face {
+    font-family: 'League Gothic';
+    src: url('leaguegothic-regular-webfont.eot');
+    src: url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('leaguegothic-regular-webfont.woff') format('woff'),
+         url('leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* basic elements */
 
@@ -21,7 +31,7 @@ header h1::after {
 header h2::before {
 	content: url(panel-01-msc.png);
 	float: left;
-	margin: 0 15px;
+	margin: 3px 15px 0 15px;
 }
 
 header h2::after {
@@ -33,7 +43,7 @@ header::after {
 	z-index:2;
 	float: left;
 	position:absolute;
-	margin-top:-460px;
+	margin-top:-345px;
 	opacity:0.6;
 }
 
@@ -76,30 +86,34 @@ abbr {
 	}
 
 header h1 { 
-	font-family:"Knockout HTF48-Featherweight";
-	font-size: 100px;
-	text-transform:uppercase;
+	/*font-family:"Knockout HTF48-Featherweight";*/
+	font-family:"League Gothic";
+	/*font-size: 75px;*/
+	font-size: 77px;
+	text-transform: uppercase;
+	/*letter-spacing: 3px;*/
 	letter-spacing: 4px;
 	text-align: center;
 	display: block;
 	padding-left: 1px;
-	padding-top: 190px;
+	padding-top: 134px;
 	color: #e06838;
-	}
+}
+
 header h2 {
-	width: 700px;
+	width: 525px;
 	text-align: left;
 	font-family:"Helvetica Neue LT Pro";
-	font-size:70px;
-	line-height:65px;
+	font-size:52px;
+	line-height:49px;
 	color: #530083;
 	float: left;
-	margin:-320px 0 0 0;
+	margin:-252px 0 0 0;
 	vertical-align: top;
 	}
 header {
-	width: 1103px;
-	height: 1103px;
+	width: 827px;
+	height: 827px;
 	background-image: url(panel-01-lp-bg.jpg);
 	overflow: hidden;
 }
