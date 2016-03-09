@@ -220,7 +220,7 @@ position:absolute;z-index:1;top:-13px;right:-13px;padding:3px;text-align:center;
 overflow:auto;max-height:95%;max-width:95%;margin:10px}
 
 .star{
-width:0px;height:0px;background:url(../img/sprites.png);background-position:0 -112px;background-repeat:none;display:-moz-inline-stack;display:inline-block;*display:inline;*zoom:1;visibility:hidden;vertical-align:text-top;cursor:pointer}
+width:0px;height:0px;background:url(../img/sprites.png);background-position:0 -112px;background-repeat:none;display:none;*zoom:1;visibility:hidden;vertical-align:text-top;cursor:pointer}
 
 .star.v{
 visibility:visible}
@@ -987,14 +987,17 @@ font-size:.85em;font-family:'nexa_lightregular', Helvetica, Arial, sans-serif}
 .toc .toc_legend a:visited{
 color:#000}
 
-.toc .toc_legend a:hover{
-color:#eee}
+.toc .toc_legend a:hover {
+color:#64B6B1;}
 
 .toc .toc_legend a.sel{
-color:inherit;cursor:text}
+color:inherit;}
 
 .toc .toc_legend a.sel:hover{
 text-decoration:none}
+
+.pl a:hover {
+color:#64B6B1;}
 
 .mobile.toc .content{
 padding:0.5em .25em 0 .25em}
@@ -1151,7 +1154,7 @@ display:block}
 display:none}
 
 .toc.search .row .date{
-display:inline}
+display:inline;margin-left:5px;}
 
 /*EDIT*/
 
