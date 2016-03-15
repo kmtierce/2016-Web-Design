@@ -157,9 +157,13 @@ header {
 }
 
 .preamble {
-	clear: right; 
+	z-index: 2;
+	position: absolute;
 	padding: 0px 10px 0 10px;
+	left: 730px;
+	top: 33px;
 	}
+
 .supporting {	
 	padding-left: 10px; 
 	margin-bottom: 40px;
@@ -183,7 +187,7 @@ div .supporting {
 	position: absolute;
 	clear:both;
 	left: 730px;
-	top: 43px;
+	top: 33px;
 }
 
 .summary, .preamble, .explanation, .participation, .benefits, .requirements {
@@ -192,6 +196,17 @@ div .supporting {
 	text-align: justify;
 	margin-left: 200px;
 	font-size:8pt;
+	padding-top:30px;
+}
+
+.explanation {
+	padding-top:250px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.participation {
+	padding-top:0px;
 }
 
 .requirements {
@@ -267,12 +282,13 @@ div .supporting {
 	color: #B3AE94;
 	}
 
+/*move this into an ::after somewhere*/
 
 .extra1 {
 	background: url(panel-03-vinyl.png) top left no-repeat; 
 	position: absolute;
 	z-index: 0;
-	top: 43px; 
+	top: 33px; 
 	left: 1534px; 
 	width: 506px; 
 	height: 815px;
