@@ -55,11 +55,12 @@ header h2::after {
 
 header::after {
 	content: url(panel-01-distress.png);
-	z-index:2;
+	z-index: 2;
 	float: left;
-	position:absolute;
-	margin-top:-354px;
-	opacity:0.6;
+	position: absolute;
+	margin-top: -355px;
+	margin-left: -1px;
+	opacity: 0.6;
 }
 
 html {
@@ -67,7 +68,7 @@ html {
 	}
 body { 
 	background-color: #e6e6e6;
-	width: 100%;
+	margin: 0;
 	}
 p { 
 
@@ -94,7 +95,7 @@ abbr {
 
 /* specific divs */
 .page-wrapper { 
-	padding: 0 175px 0 110px;  
+	padding: 25px;  
 	margin: 0; 
 	position: relative;
 	}
@@ -133,14 +134,18 @@ header h2 {
 header {
 	width: 827px;
 	height: 827px;
-	background-image: url(panel-01-lp-bg.jpg);
+	background: url(panel-01-jazz.jpg) 12px 280px no-repeat,
+				url(panel-01-bg.png) 0px 0px no-repeat;
 	overflow: hidden;
 	margin-right: 0px;
+	position: absolute;
+	z-index: 2;
 }
 
 .summary {
 	margin: 20px 20px 20px 10px; 
 	font-family: 'Crimson Text', serif;
+	display: none;
 	}
 .summary p {
 	font: italic 1.1em/2.2; 
@@ -168,17 +173,17 @@ footer a:link, footer a:visited {
 	margin-right: 20px; 
 	}
 
-div #zen-supporting {
+div .supporting {
 	width: 804px;
 	height: 815px;
 	overflow: hidden;
 	background: url(panel-02-sleeve-bg.jpg) no-repeat;
-	z-index: -1;
+	z-index: 1;
 	float: left;
 	position: absolute;
 	clear:both;
-	left: 800px;
-	top: 4px;
+	left: 730px;
+	top: 43px;
 }
 
 .summary, .preamble, .explanation, .participation, .benefits, .requirements {
@@ -266,9 +271,9 @@ div #zen-supporting {
 .extra1 {
 	background: url(panel-03-vinyl.png) top left no-repeat; 
 	position: absolute;
-	z-index: -2;
-	top: 12px; 
-	left: 1612px; 
+	z-index: 0;
+	top: 43px; 
+	left: 1534px; 
 	width: 506px; 
 	height: 815px;
 	}
