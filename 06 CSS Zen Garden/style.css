@@ -31,7 +31,21 @@
 
 }
 
+@font-face {
+	font-family: 'FontAwesome';
+    src: url('fontawesome-webfont.eot');
+    src: url('fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fontawesome-webfont.woff2') format('woff2'),
+         url('fontawesome-webfont.woff') format('woff'),
+         url('fontawesome-webfont.ttf') format('truetype'),
+         url('fontawesome-webfont.svg#michromaregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic,600italic,600);
+
+/*@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);*/
 
 /* basic elements */
 
@@ -69,6 +83,7 @@ html {
 body { 
 	background-color: #e6e6e6;
 	margin: 0;
+	-webkit-font-smoothing: antialiased;
 	}
 p { 
 
@@ -152,17 +167,47 @@ header {
 	}
 
 .summary::before {
-	content:"The CSS Zen Garden Orchestra \A The Beauty of CSS Design";
+	content: "The CSS Zen Garden Orchestra \A The Beauty of CSS Design";
 	white-space: pre;
 }
 
+.preamble::before {
+	content: "Limited Edition 180 Gram Reissue\A";
+	font-family: "League Gothic";
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
 .preamble {
-	z-index: 2;
+	z-index: 3;
 	position: absolute;
-	padding: 0px 10px 0 10px;
-	left: 730px;
-	top: 33px;
+	left: 600px;
+	top: 50px;
+	background-image: url("panel-01-foil.jpg");
+	background-position: center;
+	width: 200px;
+	height: 200px;
+	clear: none;
+	text-align: justify;
+	text-align-last: center;
+	font-size: 8pt;
+	border-radius:11px;
+	padding: 10px;
+	overflow: hidden;
+	box-shadow: 0px 2px 7px #555555;
+	-ms-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
 	}
+
+.preamble p:first-of-type {
+	margin-top: 0;
+}
+
+.preamble h3 {
+	display: none;
+}
 
 .supporting {	
 	padding-left: 10px; 
@@ -171,11 +216,54 @@ header {
 
 footer { 
 	text-align: center;
-	display: none;
+	position: absolute;
+	top: 630px;
+	left: 431px;
+	border: 1px solid #000;
 	}
-footer a:link, footer a:visited { 
-	margin-right: 20px; 
-	}
+
+footer a {
+	display: inline-block;
+	overflow: hidden;
+	width: 0px;
+	height: 0px;
+	padding: 32px 32px 0 0;
+	margin: 0 3px;
+	position: relative;
+	text-decoration: none;
+}
+
+footer a::before {
+    position: absolute;
+    overflow: hidden;
+    top: 3px;
+    left: 0;
+    font-size: 28px;
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    text-transform: none;
+}
+
+.zen-validate-html::before {
+	content: "\f13b";
+	margin-left: 3px;
+}
+
+.zen-validate-css::before {
+	content: "\f13c";
+}
+
+.zen-license::before {
+	content: "\f25e";
+}
+
+.zen-accessibility::before {
+	content: "\f193";
+}
+
+.zen-github::before {
+	content: "\f092";
+}
 
 div .supporting {
 	width: 804px;
@@ -190,43 +278,40 @@ div .supporting {
 	top: 33px;
 }
 
-.summary, .preamble, .explanation, .participation, .benefits, .requirements {
+.summary, .explanation, .participation, .benefits, .requirements, .footer {
 	width: 200px;
 	clear: none;
 	text-align: justify;
 	margin-left: 200px;
 	font-size:8pt;
+	line-height:10pt;
 	padding-top:30px;
 }
 
-.explanation {
-	padding-top:250px;
-	padding-bottom: 0px;
-	margin-bottom: 0px;
-}
-
-.participation {
+.participation, .benefits {
 	padding-top:0px;
 }
 
 .requirements {
 	position: absolute;
-	top:130px;
-	left:235px;
-}
-
-.benefits {
-	position: absolute;
 	top:0px;
 	left:235px;
 }
 
-.sidebar {
+.zen-resources {
+	position: absolute;
+	top: 690px;
+	left: 1135px;
+	border: 1px solid #000;
+	width: 200px;
+}
 
+.sidebar {
+	z-index: 3;
+	position: absolute;
 	}
 .sidebar .wrapper { 
 	font: 10px verdana, sans-serif; 
-	background: transparent url(paper-bg.jpg) top left repeat-y; 
 	padding: 10px; 
 	margin-top: 150px; 
 	width: 130px; 
